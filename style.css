@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+.card-container {
+  display: flex;
+  gap: 40px;
+  perspective: 1500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  pointer-events: none;
+  transform: rotate(25deg);
+  transition: opacity 0.2s ease;
+}
+.card img {
+  width: 100%;
+  height: 55%;
+  top: 20px;
+  object-fit: cover;
+  position: relative;
+}
+.card .title {
+  margin: 10px 0 0;
+}
+.card .description {
+  font-size: 16px;
+  color: #909090;
+  margin: 0 0 15px 0;
+}
+.card .price {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #ff6247;
+}
+.card:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .card {
+    width: 300px;
+    padding: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card {
+    width: 250px;
+    height: auto;
+    padding: 20px;
+  }
+}
