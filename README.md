@@ -9,7 +9,7 @@ An interactive web application featuring stunning 3D tilting food cards that sho
 - **Food Showcase**: Featuring Pasta Primavera, Caesar Salad, and Margherita Pizza
 
 ## Live Demo 🌐
-Check out the live demo: [https://iam269.github.io/3D-Tilt-Food-Cards/](https://iam269.github.io/3D-Tilt-Food-Cards/)
+Check out the live demo: [https://itsiamdev.github.io/3D-Tilt-Food-Cards/](https://itsiamdev.github.io/3D-Tilt-Food-Cards/)
 
 ## Technologies Used 🛠️
 - HTML5
